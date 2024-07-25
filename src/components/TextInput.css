@@ -1,0 +1,59 @@
+label {
+  font-family: "Inter var", sans-serif;
+  display: block;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-weight: 500;
+  color: #111827;
+  margin-bottom: 0.5rem;
+}
+
+input {
+  width: 100%;
+  border-radius: 0.375rem;
+  border: 1px solid #64748b;
+  padding: 0.375rem 1rem;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  color: #111827;
+  width: 100%;
+  min-width: 15rem;
+}
+
+input::placeholder {
+  color: #64748b;
+}
+
+input:focus {
+  outline: rgb(2, 132, 199) solid 3px;
+}
+
+input:disabled {
+  cursor: not-allowed;
+  background-color: #e5e7eb;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+input[aria-invalid="true"] {
+  border-color: #a80000;
+}
+
+.error {
+  margin-top: 0.5rem;
+  color: #a80000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 0.5rem;
+  font-size: 1rem;
+}
